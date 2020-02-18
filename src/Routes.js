@@ -9,7 +9,7 @@ import Login from './containers/Login';
 
 export default ({ childProps }) => (
 	<Switch>
-		{/* changing the home route here to the login page */}
+		{/* Changing the home route here to the login page */}
 		<AppliedRoute path="/" exact component={Login} props={childProps} />
 		{/* <AppliedRoute path="/login" exact component={Login} props={childProps} />
 		<AppliedRoute path="/signup" exact component={Signup} props={childProps} /> */}
