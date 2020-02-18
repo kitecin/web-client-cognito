@@ -34,7 +34,8 @@ export default class Login extends Component {
 		try {
 			await Auth.signIn(this.state.email, this.state.password);
 			this.props.userHasAuthenticated(true);
-			this.props.history.push('/');
+			window.location.href = "https://training.eras.jp/";
+			// this.props.history.push("/"); ---> this is for using an API
 		} catch (e) {
 			alert(e.message);
 			this.setState({ isLoading: false });
@@ -61,6 +62,7 @@ export default class Login extends Component {
 						isLoading={this.state.isLoading}
 						text="Login"
 						loadingText="Logging in…"
+						color= "red"
 					/>
 				</form>
 			</div>

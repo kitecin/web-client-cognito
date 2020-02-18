@@ -1,10 +1,108 @@
-@media all and (min-width: 480px) {
-	.Login {
-		padding: 60px 0;
-	}
+.btn-default:hover {
+    background: rgb(243, 108, 106) 0% 0% no-repeat padding-box;
+}
 
-	.Login form {
-		margin: 0 auto;
-		max-width: 320px;
-	}
+.btn-default {
+    width: 500px;
+    height: 50px;
+    background: #CD2B29 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+.form-control {
+    width: 500px;
+    height: 50px;
+    border: 1px solid #CD2B29;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+@media all and (min-width: 480px) {
+    .Login {
+        padding: 60px 0;
+    }
+    .Login form {
+        margin: 0 auto;
+        max-width: 320px;
+    }
+    .btn-default {
+        width: 500px;
+        height: 50px;
+        background: #CD2B29 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 1;
+        color: #FFFFFF;
+    }
+    .form-control {
+        width: 500px;
+        height: 50px;
+        border: 1px solid #CD2B29;
+        border-radius: 10px;
+        opacity: 1;
+    }
+}
+
+
+/** SMARTPHONES **/
+
+@media screen and (max-device-width: 480px) {
+    .send-button {
+        width: 250px;
+    }
+    .logo {
+        width: 90%;
+    }
+    .form-control {
+        width: 380px;
+    }
+    .btn-default {
+        width: 380px;
+    }
+}
+
+@media screen and (max-device-width: 380px) {
+    .send-button {
+        width: 250px;
+    }
+    .logo {
+        width: 90%;
+    }
+    .form-control {
+        width: 330px;
+    }
+    .btn-default {
+        width: 330px;
+    }
+}
+
+@media screen and (max-device-width: 350px) {
+    .send-button {
+        width: 290px;
+    }
+    .logo {
+        width: 80%;
+    }
+    .form-control {
+        width: 280px;
+    }
+    .btn-default {
+        width: 280px;
+    }
+}
+
+@media screen and (max-device-width: 330px) {
+    .send-button {
+        width: 290px;
+    }
+    .logo {
+        width: 80%;
+    }
+    .form-control {
+        width: 330px;
+    }
+    .btn-default {
+        width: 330px;
+    }
 }

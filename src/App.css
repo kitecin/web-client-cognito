@@ -1,7 +1,138 @@
 .App {
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
 .App .navbar-brand {
-	font-weight: bold;
+    font-weight: bold;
+}
+
+.frame {
+    margin-right: 135px;
+}
+
+.frame-header {
+    margin-top: 220px;
+    margin: 0 auto;
+    width: 360px;
+    height: 50px;
+}
+
+.frame-body {
+    padding-top: 50px;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.logout {
+    margin-left: 55%;
+    margin-top: -5%;
+    width: 80px;
+    height: 50px;
+    background: #CD2B29 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+
+/** SMARTPHONES **/
+
+@media screen and (max-device-width: 1030px) {
+    .logout {
+        margin-left: 56%;
+        width: 80px;
+    }
+}
+
+@media screen and (max-device-width: 480px) {
+    .frame {
+        margin-top: 0px;
+        margin-right: 0px;
+        width: 270px;
+    }
+    .frame-header {
+        width: 390px;
+        margin-left: 15px;
+    }
+    .frame-body {
+        padding-top: 10px;
+        width: 280px;
+    }
+    .logo {
+        width: 90%;
+    }
+    .logout {
+        margin-left: 55%;
+        margin-top: 5%;
+        width: 80px;
+    }
+}
+
+@media screen and (max-device-width: 380px) {
+    .frame {
+        margin-top: 0px;
+        margin-right: 0px;
+        width: 270px;
+    }
+    .frame-header {
+        width: 270px;
+    }
+    .frame-body {
+        padding-top: 10px;
+        width: 280px;
+    }
+    .logo {
+        width: 90%;
+    }
+    .logout {
+        margin-left: 45%;
+        margin-top: 5%;
+        width: 80px;
+    }
+}
+
+@media screen and (max-device-width: 350px) {
+    .frame-body {
+        width: 290px;
+    }
+    .frame {
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    .logo {
+        width: 80%;
+    }
+    .logout {
+        margin-left: 85%;
+        margin-top: 5%;
+        width: 80px;
+    }
+}
+
+@media screen and (max-device-width: 330px) {
+    .frame-header {
+        width: 330px;
+    }
+    .frame-body {
+        width: 290px;
+        padding-top: 10px;
+    }
+    .frame {
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    .logo {
+        width: 80%;
+    }
+    .logout {
+        margin-left: 45%;
+        margin-top: 5%;
+        width: 80px;
+    }
 }

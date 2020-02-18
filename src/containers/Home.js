@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { PageHeader, ListGroup } from 'react-bootstrap';
 import { API } from 'aws-amplify';
 import './Home.css';
+import Route from 'react-router-dom/Route';
 
 export default class Home extends Component {
 	constructor(props) {
@@ -38,18 +39,13 @@ export default class Home extends Component {
 	}
 
 	renderLander() {
-		return (
-			<div className="lander">
-				<h1>Test web app</h1>
-				<p>A simple react test app</p>
-			</div>
-		);
+		return
 	}
 
 	renderTest() {
 		return (
 			<div className="test">
-				<PageHeader>Test API call</PageHeader>
+				<PageHeader>Loaded</PageHeader>
 				<ListGroup>{!this.state.isLoading && this.renderTestAPI(this.state.testApiCall)}</ListGroup>
 			</div>
 		);

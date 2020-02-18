@@ -2,7 +2,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import React, { Component, Fragment } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-import { Nav, Navbar, NavItem } from 'react-bootstrap';
+import { Nav, Navbar, NavItem, Button } from 'react-bootstrap';
 import Routes from './Routes';
 import { Auth } from 'aws-amplify';
 
@@ -40,7 +40,7 @@ class App extends Component {
 		await Auth.signOut();
 
 		this.userHasAuthenticated(false);
-		this.props.history.push('/login');
+		this.props.history.push('/');
 	};
 	render() {
 		const childProps = {
@@ -49,7 +49,7 @@ class App extends Component {
 		};
 		return (
 			<div className="App container">
-				<Navbar fluid collapseOnSelect>
+				{/* <Navbar fluid collapseOnSelect>
 					<Navbar.Header>
 						<Navbar.Brand>
 							<Link to="/">Test application</Link>
@@ -72,8 +72,21 @@ class App extends Component {
 							)}
 						</Nav>
 					</Navbar.Collapse>
-				</Navbar>
-				<Routes childProps={childProps} />
+				</Navbar> */}
+				<div className="frame">
+					<div className="frame-header">
+					<Link to="/"><img src="https://training.eras.jp/common/img/reboot_logo.svg" className="logo"alt="ERAS LOGO"/></Link>
+					</div>
+					<div className="frame-body">
+						<Routes childProps={childProps} />
+					</div>
+					<div className="isLogged">
+					{this.state.isAuthenticated ? (<Button className="logout" onClick={this.handleLogout}>Logout</Button>
+					):(
+						<Button className="hidden"></Button>
+					)}
+					</div>
+				</div>
 			</div>
 		);
 	}
