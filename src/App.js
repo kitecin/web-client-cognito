@@ -5,8 +5,9 @@ import { Link, withRouter } from 'react-router-dom';
 import { Nav, Navbar, NavItem, Button } from 'react-bootstrap';
 import Routes from './Routes';
 import { Auth } from 'aws-amplify';
-
 import './App.css';
+import logo from './images/reboot_logo.png';
+
 
 class App extends Component {
 	constructor(props) {
@@ -75,7 +76,7 @@ class App extends Component {
 				</Navbar> */}
 				<div className="frame">
 					<div className="frame-header">
-					<Link to="/"><img src="https://training.eras.jp/common/img/reboot_logo.svg" className="logo"alt="ERAS LOGO"/></Link>
+					<Link to="/"><img src={logo} className="logo"alt="ERAS LOGO"/></Link>
 					</div>
 					<div className="frame-body">
 						<Routes childProps={childProps} />

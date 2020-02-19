@@ -6,6 +6,11 @@
     font-weight: bold;
 }
 
+.logo {
+    width: 150%;
+    margin-top: 10px;
+}
+
 .frame {
     margin-right: 135px;
 }
@@ -88,7 +93,7 @@
         width: 280px;
     }
     .logo {
-        width: 90%;
+        width: 110%;
     }
     .logout {
         margin-left: 45%;
@@ -128,7 +133,7 @@
         margin-right: 0px;
     }
     .logo {
-        width: 80%;
+        width: 90%;
     }
     .logout {
         margin-left: 45%;

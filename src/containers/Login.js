@@ -63,6 +63,7 @@ export default class Login extends Component {
 						text="Login"
 						loadingText="Logging in…"
 						color= "red"
+						className="login"
 					/>
 				</form>
 			</div>
